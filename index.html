@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/internet.ico">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>小邑闲庄---更实惠，更环保</title>
+</head>
+
+<body>
+  <!-- 头部区域 -->
+  <header id="header">
+    <nav class="navbar navbar-itcast navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">小邑闲庄</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active index"><a href="#">首页<span class="sr-only">(current)</span></a></li>
+            <li class="release-login"><a href="#" data-toggle="modal" data-target="#myModal2" class="login">登录</a></li>
+            <li class="mine-register"><a href="#" data-toggle="modal" data-target="#myModal1" class="register">注册</a>
+            </li>
+            <li><a href="#">关于我们</a></li>
+          </ul>
+          <form class="navbar-form navbar-right visible-lg">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" style="border: 2px solid #fec722">
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">欢迎注册</h4>
+        </div>
+        <div class="modal-body">
+          <p class="remind">小邑闲庄不会以任何理由要求您转账汇款，谨防诈骗。</p>
+          <div class="inputPho">
+            <input type="text" class="form-control inputItem inputPhone" placeholder="请输入手机号码"
+              aria-describedby="basic-addon1"><span class="hidden-xs">号码输入格式出错</span>
+          </div>
+          <div class="inputPass">
+            <input type="password" class="form-control inputItem inputPassword" placeholder="请输入密码"
+              aria-describedby="basic-addon2"><span class="hidden-xs">密码输入格式出错</span>
+          </div>
+          <div class="inputAgain">
+            <input type="password" class="form-control inputItem inputAgainPassword" placeholder="再次输入密码"
+              aria-describedby="basic-addon3"><span class="hidden-xs">两次密码输入不一致</span>
+          </div>
+
+          <button type="button" class="register">注册</button>
+          <p class="text-right isLogin"><a href="#" data-toggle="modal" data-target="#myModal2">立即登录></a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">您尚未登录</h4>
+        </div>
+        <div class="modal-body">
+          <p class="remind">小邑闲庄不会以任何理由要求您转账汇款，谨防诈骗。</p>
+          <div class="inputPho">
+            <input type="text" class="form-control inputItem inputPhone" placeholder="请输入手机号码"
+              aria-describedby="basic-addon1"><span class="hidden-xs">账户输入格式出错</span>
+          </div>
+          <div class="inputPass">
+            <input type="password" class="form-control inputItem inputPassword" placeholder="请输入密码"
+              aria-describedby="basic-addon2"><span class="hidden-xs">密码输入格式出错</span>
+          </div>
+          <button type="button" class="login">登录</button>
+          <p class="link">
+            <span class="isforget"><a href="#">忘记密码？</a></span>
+            <span class="isRegister"><a href="#" data-toggle="modal" data-target="#myModal1">立即注册></a></span>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+    <div class="modal-dialog" role="document" style="margin-top: 190px;">
+      <div class="modal-content" style="border: 4px solid skyblue">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">登录成功</h4>
+        </div>
+        <div class="modal-body">
+          <p style="font-size: 16px;"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
+    <div class="modal-dialog" role="document" style="margin-top: 180px;">
+      <div class="modal-content" style="border: 4px solid red">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">您尚未登录</h4>
+        </div>
+        <div class="modal-body">
+          <p style="font-size: 16px;"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5">
+    <div class="modal-dialog" role="document" style="margin-top: 190px;">
+      <div class="modal-content" style="border: 4px solid skyblue">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">注册成功</h4>
+        </div>
+        <div class="modal-body">
+          <p style="font-size: 16px;"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6">
+    <div class="modal-dialog" role="document" style="margin-top: 180px;">
+      <div class="modal-content" style="border: 4px solid red">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">注册失败</h4>
+        </div>
+        <div class="modal-body">
+          <p style="font-size: 16px;"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /头部区域 -->
+
+  <!-- 轮播图 -->
+  <section id="main_ad" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <!-- 下面的小点点，活动指示器 -->
+    <ol class="carousel-indicators">
+      <li data-target="#main_ad" data-slide-to="0" class="active"></li>
+      <li data-target="#main_ad" data-slide-to="1"></li>
+      <li data-target="#main_ad" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播项 -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" data-image-lg="img/slide_01_2000x410.png" data-image-xs="img/slide_01_640x340.png"></div>
+      <div class="item" data-image-lg="img/slide_02_2000x410.png" data-image-xs="img/slide_02_640x340.png"></div>
+      <div class="item" data-image-lg="img/slide_03_2000x410.png" data-image-xs="img/slide_03_640x340.png"></div>
+    </div>
+    <!-- 控制按钮 -->
+    <a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#main_ad" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </section>
+  <!-- /轮播图 -->
+
+  <!-- 每日推荐 -->
+  <section id="recommend" class="recommendExtend">
+    <div class="container">
+      <div class="recommend-img visible-lg" title="每日推荐">
+        <img src="img/arrow_1140.png" alt="箭头" class="img-item">
+      </div>
+      <div class="nav-content">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active col-lg-3 col-md-4 col-sm-4 col-xs-4"><a href="#category_01" aria-controls="category_01" role="tab"
+              data-toggle="tab" aria-expanded="false"><img src="img/旧物品闲置 (1).png" class="nav-icon" width="20" />闲置</a>
+          </li>
+          <li role="presentation" class="col-lg-3 col-md-4 col-sm-4 col-xs-4"><a href="#category_02" aria-controls="category_02" role="tab"
+              data-toggle="tab" aria-expanded="true"><img src="img/共享.png" class="nav-icon" width="20" />共享</a></li>
+          <li role="presentation" class="col-lg-3 col-md-4 col-sm-4 col-xs-4"><a href="#category_03" aria-controls="category_03" role="tab"
+              data-toggle="tab" aria-expanded="false"><img src="img/爱心捐赠.png" class="nav-icon" width="20" />捐赠</a></li>
+        </ul>
+        <!-- 所有的选项卡内容 -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="category_01">
+            <div class="row">
+              <ul class="goods-list">
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/高等数学 下册 5元.jpg" alt="高等数学 "></div>
+                    <p class="goods-title">高等数学 </p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/marx.jpg" alt="马克思"></div>
+                    <p class="goods-title">马克思</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/lamp.jpg" alt="台灯"></div>
+                    <p class="goods-title">台灯</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/香水.png" alt="香水"></div>
+                    <p class="goods-title">兔子指甲油兔子指甲油兔子指甲油兔子指甲油</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/shoeRack_5.jpg" alt="鞋架"></div>
+                    <p class="goods-title">鞋架</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/computerScience.jpg" alt="计算机概论"></div>
+                    <p class="goods-title">计算机概论</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/bike_28.jpg" alt="28寸自行车"></div>
+                    <p class="goods-title">28寸自行车</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/bike_26.jpg" alt="26寸自行车"></div>
+                    <p class="goods-title">26寸自行车</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/basketball_2.jpg" alt="篮球"></div>
+                    <p class="goods-title">篮球</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/basketball_1.jpg" alt="二手篮球"></div>
+                    <p class="goods-title">二手篮球</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="category_02">
+            <div class="row">
+            <ul class="goods-list">
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/化妆品.png" alt="化妆品"></div>
+                    <p class="goods-title">化妆品</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/化妆笔.png" alt="化妆笔"></div>
+                    <p class="goods-title">化妆笔</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/椅子.png" alt="椅子"></div>
+                    <p class="goods-title">椅子</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/香水.png" alt="香水"></div>
+                    <p class="goods-title">兔子指甲油兔子指甲油兔子指甲油兔子指甲油</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/裤子.png" alt="裤子"></div>
+                    <p class="goods-title">裤子</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/computerScience.jpg" alt="计算机概论"></div>
+                    <p class="goods-title">计算机概论</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/bike_28.jpg" alt="28寸自行车"></div>
+                    <p class="goods-title">28寸自行车</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/bike_26.jpg" alt="26寸自行车"></div>
+                    <p class="goods-title">26寸自行车</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/basketball_2.jpg" alt="篮球"></div>
+                    <p class="goods-title">篮球</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/basketball_1.jpg" alt="二手篮球"></div>
+                    <p class="goods-title">二手篮球</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="category_03">
+            <div class="row">
+            <ul class="goods-list">
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/english_4.jpg" alt="英语4级"></div>
+                    <p class="goods-title">英语4级</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/C语言程序设计 20元 比较新.jpg" alt="C语言程序设计"></div>
+                    <p class="goods-title">C语言程序设计</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/恩雅EMx1演奏级电箱款民谣36寸吉他 原价899 现在400  已下定决心专心考研.jpg" alt="36寸吉他"></div>
+                    <p class="goods-title">36寸吉他</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/香水.png" alt="香水"></div>
+                    <p class="goods-title">兔子指甲油兔子指甲油兔子指甲油兔子指甲油</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-xs-6 col-sm-5 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/裤子.png" alt="裤子"></div>
+                    <p class="goods-title">裤子</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/computerScience.jpg" alt="计算机概论"></div>
+                    <p class="goods-title">计算机概论</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/bike_28.jpg" alt="28寸自行车"></div>
+                    <p class="goods-title">28寸自行车</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/bike_26.jpg" alt="26寸自行车"></div>
+                    <p class="goods-title">26寸自行车</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/basketball_2.jpg" alt="篮球"></div>
+                    <p class="goods-title">篮球</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+                <li class="goods col-lg-2 col-sm-5 col-xs-6 col-md-3" title="点击查看详情">
+                  <a href="#">
+                    <div class="goods-img"><img src="img/basketball_1.jpg" alt="二手篮球"></div>
+                    <p class="goods-title">二手篮球</p>
+                    <p class="goods-degree text-right">❤<span>9</span>人想要</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p id="viewMore"><a href="#">>>>查看更多</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- /每日推荐 -->
+
+  <!-- 我的 -->
+  <section id="minePage" style="display: none">
+    <div class="container">
+      <div class="head">
+        <div class="myHeadImg"></div>
+        <div class="myMing"><span class="myName">小帅</span><span class="glyphicon glyphicon-user"
+            aria-hidden="true"></span></div>
+        <p class="myIntroduce">帅得不得了</p>
+        <button type="button" class="btn btn-default myEdit">退出登录</button>
+        <a class="right">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="nav-content">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active col-md-3"><a href="#category_04" aria-controls="category_04" role="tab"
+              data-toggle="tab" aria-expanded="false">个人中心</a>
+          </li>
+          <li role="presentation" class="col-md-3"><a href="#category_05" aria-controls="category_05" role="tab"
+              data-toggle="tab" aria-expanded="false">消息中心</a>
+          </li>
+        </ul>
+        <!-- 所有的选项卡内容 -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="category_04">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="leftNav col-md-2">
+                  <ul>
+                    <li value="#category_04 .releaseContent" class="release myActive">我的发布</li>
+                    <li value="#category_04 .leaseContent" class="lease">我的租赁</li>
+                    <li value="#category_04 .orderContent" class="order">我的订单</li>
+                    <li value="#category_04 .collectionContent" class="collection">我的收藏</li>
+                  </ul>
+                </div>
+                <div class="loading">
+                  <div class="rightContent col-md-10 releaseContent">
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/化妆品.png" alt="化妆品">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/化妆品.png" alt="化妆品">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/化妆品.png" alt="化妆品">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/化妆品.png" alt="化妆品">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/化妆品.png" alt="化妆品">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rightContent col-md-10 leaseContent">
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/椅子.png" alt="椅子">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/椅子.png" alt="椅子">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/椅子.png" alt="椅子">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/椅子.png" alt="椅子">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/椅子.png" alt="椅子">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rightContent col-md-10 orderContent">
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/裤子.png" alt="裤子">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/裤子.png" alt="裤子">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/裤子.png" alt="裤子">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/裤子.png" alt="裤子">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/化妆品.png" alt="化妆品">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rightContent col-md-10 collectionContent">
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/香水.png" alt="香水">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/香水.png" alt="香水">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/香水.png" alt="香水">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/香水.png" alt="香水">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="goodsContent media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/香水.png" alt="化妆品">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <div class="goods-introduce">
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          发布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                          布的详情发布的详情发布的详情发布的详情发布的详情发布的详情
+                        </div>
+                        <div class="foot">
+                          <p class="foot-left">￥72</p>
+                          <p class="foot-right"><a href="#">查看详情>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade in" id="category_05">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="leftNav col-md-2">
+                  <ul>
+                    <li value="#category_05 .messageContent" class="message myActive">我的消息</li>
+                    <li value="#category_05 .systemContent" class="system">系统通知</li>
+                    <li value="#category_05 .followContent" class="follow">我的关注</li>
+                    <li value="#category_05 .fansContent" class="fans">我的粉丝</li>
+                  </ul>
+                </div>
+                <div class="loading">
+                  <div class="rightContent col-md-10 messageContent">
+                    <div class="messageItem media">
+                      <div class="media-left">
+
+                      </div>
+                      <div class="itemRight">
+                        <p>你好，欢迎使用小邑闲庄</p>
+                      </div>
+                    </div>
+                    <div class="messageItem media">
+                      <div class="media-left">
+
+                      </div>
+                      <div class="itemRight">
+                        <p>你好，欢迎使用小邑闲庄</p>
+                      </div>
+                    </div>
+                    <div class="messageItem media">
+                      <div class="media-left">
+
+                      </div>
+                      <div class="itemRight">
+                        <p>你好，欢迎使用小邑闲庄</p>
+                      </div>
+                    </div>
+                    <div class="messageItem media">
+                      <div class="media-left">
+
+                      </div>
+                      <div class="itemRight">
+                        <p>你好，欢迎使用小邑闲庄</p>
+                      </div>
+                    </div>
+                    <div class="messageItem media">
+                      <div class="media-left">
+
+                      </div>
+                      <div class="itemRight">
+                        <p>你好，欢迎使用小邑闲庄</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rightContent col-md-10 systemContent">
+                    <div class="systemItem media">
+                      <div class="media-left">
+
+                      </div>
+                      <div class="itemRight">
+                        <p>你好，欢迎使用小邑闲庄</p>
+                      </div>
+                    </div>
+                    <div class="messageItem media">
+                      <div class="media-left">
+
+                      </div>
+                      <div class="itemRight">
+                        <p>你好，欢迎使用小邑闲庄</p>
+                      </div>
+                    </div>
+                    <div class="messageItem media">
+                      <div class="media-left">
+
+                      </div>
+                      <div class="itemRight">
+                        <p>你好，欢迎使用小邑闲庄</p>
+                      </div>
+                    </div>
+                    <div class="messageItem media">
+                      <div class="media-left">
+
+                      </div>
+                      <div class="itemRight">
+                        <p>你好，欢迎使用小邑闲庄</p>
+                      </div>
+                    </div>
+                    <div class="messageItem media">
+                      <div class="media-left">
+
+                      </div>
+                      <div class="itemRight">
+                        <p>你好，欢迎使用小邑闲庄</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="rightContent col-md-10 followContent">
+                    <div class="followItem media col-md-5">
+                      <div class="media-left"></div>
+                      <div class="itemRight">
+                        <h4 class="media-heading">我在学习<img src="img/women.png" alt="女性" width="20"></h4>
+                        <p class="introduce">简介</p>
+                        <p class="concern"><a href="#">相互关注</a></p>
+                      </div>
+                    </div>
+                    <div class="followItem media col-md-5">
+                      <div class="media-left"></div>
+                      <div class="itemRight">
+                        <h4 class="media-heading">我在学习<img src="img/women.png" alt="女性" width="20"></h4>
+                        <p class="introduce">简介</p>
+                        <p class="concern"><a href="#">取消关注</a></p>
+                      </div>
+                    </div>
+                    <div class="followItem media col-md-5">
+                      <div class="media-left"></div>
+                      <div class="itemRight">
+                        <h4 class="media-heading">我在学习<img src="img/women.png" alt="女性" width="20"></h4>
+                        <p class="introduce">简介</p>
+                        <p class="concern"><a href="#">+关注</a></p>
+                      </div>
+                    </div>
+                    <div class="followItem media col-md-5">
+                      <div class="media-left"></div>
+                      <div class="itemRight">
+                        <h4 class="media-heading">我在学习<img src="img/women.png" alt="女性" width="20"></h4>
+                        <p class="introduce">简介</p>
+                        <p class="concern"><a href="#">取消关注</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rightContent col-md-10 fansContent">
+                    <div class="fansItem media col-md-5">
+                      <div class="media-left"></div>
+                      <div class="itemRight">
+                        <h4 class="media-heading">我在学习<img src="img/women.png" alt="女性" width="20"></h4>
+                        <p class="introduce">简介</p>
+                        <p class="concern"><a href="#">相互关注</a></p>
+                      </div>
+                    </div>
+                    <div class="fansItem media col-md-5">
+                      <div class="media-left"></div>
+                      <div class="itemRight">
+                        <h4 class="media-heading">我在学习<img src="img/women.png" alt="女性" width="20"></h4>
+                        <p class="introduce">简介</p>
+                        <p class="concern"><a href="#">相互关注</a></p>
+                      </div>
+                    </div>
+                    <div class="fansItem media col-md-5">
+                      <div class="media-left"></div>
+                      <div class="itemRight">
+                        <h4 class="media-heading">我在学习<img src="img/women.png" alt="女性" width="20"></h4>
+                        <p class="introduce">简介</p>
+                        <p class="concern"><a href="#">相互关注</a></p>
+                      </div>
+                    </div>
+                    <div class="fansItem media col-md-5">
+                      <div class="media-left"></div>
+                      <div class="itemRight">
+                        <h4 class="media-heading">我在学习<img src="img/women.png" alt="女性" width="20"></h4>
+                        <p class="introduce">简介</p>
+                        <p class="concern"><a href="#">相互关注</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /我的 -->
+
+  <!-- 发布 -->
+  <section id="releasePage" style="display:none;">
+    <div class="container">
+      <div class="left col-md-2">
+        <ul class="leftItem">
+          <li value="#releasePage .release-idle" class="myActive">闲置</li>
+          <li value="#releasePage .release-donate">捐献</li>
+          <li value="#releasePage .release-share">共享</li>
+        </ul>
+      </div>
+      <div class="middle col-md-6 release-idle">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputText1" class="col-sm-2 control-label">标题</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="inputText1" placeholder="裤子">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputText2" class="col-sm-2 control-label">价格</label>
+            <div class="col-sm-3" style="display:flex;"><span style="font-size: 26px;">￥</span><input type="text" class="form-control" id="inputText2" placeholder="0.0"></div>
+          </div>
+          <div class="form-group">
+            <label for="radio-inline" class="col-sm-2 control-label">交易方式</label>
+            <label class="radio-inline" style="margin-left: 20px;">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 自提
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 送货上门
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 快递
+            </label>
+          </div>
+          <div class="idle-goods">
+            <h4>物品简介</h4>
+            <textarea class="form-control textareaItem" rows="5" style="resize: none; border: none;" placeholder="描述物品转手原因，使用感受等"></textarea>
+            <div class="form-group">
+                <label for="inputText3" class="col-sm-2 control-label">使用时长</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="inputText3" placeholder="一个月">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputText4" class="col-sm-2 control-label">物品</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="inputText4" placeholder="九成新">
+                </div>
+            </div>
+          </div>  
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-7 ensureRelease">
+              <button type="submit" class="btn btn-default ensureReleaseItem">确认发布</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="right col-md-2 release-idle">
+        <p class="text1">变换闲置物</p>
+        <p class="text2">让生活更简单</p>
+        <div class="img"><img src="img/香水.png" alt="香水" width='100'></div>
+        <p class="uploadImg"><a href="#">点击上传图片</a></p>
+        <input type="file" name="uploadFile" id="uploadFile" style="opacity: 0; z-index: -100;">
+      </div>
+
+      <div class="middle col-md-6 release-donate" style="display:none;">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputText1" class="col-sm-2 control-label">标题</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="inputText1" placeholder="裤子">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputText2" class="col-sm-2 control-label">价格</label>
+              <div class="col-sm-3" style="display:flex;"><span style="font-size: 26px;">￥</span><input type="text" class="form-control" id="inputText2" placeholder="0.0"></div>
+            </div>
+            <div class="form-group">
+              <label for="radio-inline" class="col-sm-2 control-label">交易方式</label>
+              <label class="radio-inline" style="margin-left: 20px;">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 自提
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 送货上门
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 快递
+              </label>
+            </div>
+            <div class="idle-goods">
+              <h4>物品简介</h4>
+              <textarea class="form-control textareaItem" rows="5" style="resize: none; border: none;" placeholder="描述物品转手原因，使用感受等"></textarea>
+              <div class="form-group">
+                  <label for="inputText3" class="col-sm-2 control-label">使用时长</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="inputText3" placeholder="一个月">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="inputText4" class="col-sm-2 control-label">物品</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="inputText4" placeholder="九成新">
+                  </div>
+              </div>
+            </div>  
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-7 ensureRelease">
+                <button type="submit" class="btn btn-default ensureReleaseItem">确认发布</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      <div class="right col-md-2 release-donate" style="display:none;">
+        <p class="text1">变换闲置物</p>
+        <p class="text2">让生活更简单</p>
+        <div class="img"><img src="img/香水.png" alt="香水" width='100'></div>
+        <p class="uploadImg"><a href="#">点击上传图片</a></p>
+        <input type="file" name="uploadFile" id="uploadFile" style="opacity: 0; z-index: -100;">
+      </div>
+
+      <div class="middle col-md-6 release-share" style="display:none;">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputText1" class="col-sm-2 control-label">标题</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="inputText1" placeholder="裤子">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputText2" class="col-sm-2 control-label">价格</label>
+              <div class="col-sm-3" style="display:flex;"><span style="font-size: 26px;">￥</span><input type="text" class="form-control" id="inputText2" placeholder="0.0"></div>
+            </div>
+            <div class="form-group">
+              <label for="radio-inline" class="col-sm-2 control-label">交易方式</label>
+              <label class="radio-inline" style="margin-left: 20px;">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 自提
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 送货上门
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 快递
+              </label>
+            </div>
+            <div class="idle-goods">
+              <h4>物品简介</h4>
+              <textarea class="form-control textareaItem" rows="5" style="resize: none; border: none;" placeholder="描述物品转手原因，使用感受等"></textarea>
+              <div class="form-group">
+                  <label for="inputText3" class="col-sm-2 control-label">使用时长</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="inputText3" placeholder="一个月">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="inputText4" class="col-sm-2 control-label">物品</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="inputText4" placeholder="九成新">
+                  </div>
+              </div>
+            </div>  
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-7 ensureRelease">
+                <button type="submit" class="btn btn-default ensureReleaseItem">确认发布</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      <div class="right col-md-2 release-share" style="display:none;">
+        <p class="text1">变换闲置物</p>
+        <p class="text2">让生活更简单</p>
+        <div class="img"><img src="img/香水.png" alt="香水" width='100'></div>
+        <p class="uploadImg"><a href="#">点击上传图片</a></p>
+        <input type="file" name="uploadFile" id="uploadFile" style="opacity: 0; z-index: -100;">
+      </div>
+    </div>
+  </section>
+  <!-- /发布 -->
+  <!-- 脚注区域 -->
+  <footer id="foot">
+    <p class="text">该网站的版权由 五邑大学 07酱油队 所有</p>
+  </footer>
+  <!-- /脚注区域 -->
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
